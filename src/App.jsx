@@ -1,3 +1,4 @@
+import ButtonTap from "./components/ButtonTap";
 import Keyframe from "./components/Keyframe";
 import Simple from "./components/Simple";
 
@@ -7,6 +8,8 @@ function App() {
       <Simple />
       <br />
       <Keyframe />
+      <br />
+      <ButtonTap />
     </>
   );
 }
