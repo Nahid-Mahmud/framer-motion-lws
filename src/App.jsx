@@ -1,6 +1,7 @@
 import ButtonTap from "./components/ButtonTap";
 import Counter from "./components/Counter";
 import Keyframe from "./components/Keyframe";
+import ScrollRevel from "./components/ScrollRevel";
 import Simple from "./components/Simple";
 import TextMotion from "./components/TextMotion";
 import Variants from "./components/Variants";
@@ -18,7 +19,8 @@ function App() {
 
       {/* <TransitionType /> */}
       {/* <Variants /> */}
-      <Counter />
+      {/* <Counter /> */}
+      <ScrollRevel />
     </>
   );
 }
