@@ -2,6 +2,7 @@ import ButtonTap from "./components/ButtonTap";
 import Keyframe from "./components/Keyframe";
 import Simple from "./components/Simple";
 import TextMotion from "./components/TextMotion";
+import TransitionType from "./TransitionType";
 
 function App() {
   return (
@@ -11,7 +12,9 @@ function App() {
       {/* <Keyframe /> */}
       {/* <br /> */}
       {/* <ButtonTap /> */}
-      <TextMotion />
+      {/* <TextMotion /> */}
+
+      <TransitionType />
     </>
   );
 }
