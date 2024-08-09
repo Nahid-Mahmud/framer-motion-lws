@@ -53,7 +53,7 @@ const Images = () => {
         opacity: showImages ? 1 : 0,
       },
       {
-        duration: 0.5,
+        duration: 0.7,
         delay: showImages ? staggerImages : 0,
       }
     );
@@ -68,21 +68,17 @@ const Images = () => {
         whileHover={{
           scale: 1.07,
         }}
-        onClick={() => setShowImages(!showImages)}
+        onClick={() => setShowImages((prev) => !prev)}
       >
         {showImages ? "Hide Images" : "Show Images"}
       </motion.button>
 
       {/* Images */}
 
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-4 gap-4">
         {ImagesArray.map((image) => (
-          <motion.div
-            key={image.id}
-            className="images rounded-md overflow-hidden h-80 w-auto"
-            whileHover={{ scale: 1.1 }}
-          >
-            <img src={image.image} alt="images" />
+          <motion.div key={image.id} className="images rounded-md overflow-hidden" whileHover={{ scale: 1.05 }}>
+            {showImages && <img src={image.image} className={`h-80 w-full`} alt="images" />}
           </motion.div>
         ))}
       </div>

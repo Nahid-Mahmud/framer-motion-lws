@@ -24,7 +24,7 @@ function App() {
       {/* <Counter /> */}
       {/* <ScrollRevel /> */}
       {/* <Stagger /> */}
-      <Images />
+      {/* <Images /> */}
     </>
   );
 }
